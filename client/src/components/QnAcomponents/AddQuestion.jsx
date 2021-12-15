@@ -1,7 +1,16 @@
 import React from 'react';
 
-const AddQuestion = (props) => (
-<div>Add a new question</div>
-)
+class AddQuestion extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+
+  render(){
+    return(
+      <button>Add a new question</button>
+    )
+  }
+}
 
 export default AddQuestion;
