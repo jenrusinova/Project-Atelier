@@ -32,7 +32,7 @@ class AddQuestionForm extends React.Component {
     return(
       <div>
         <div className = 'qna-add-question-main-title'>Ask a question</div>
-          <div className ='qna-add-question-subtitle'>About the hardcoded product name</div>
+          <div className ='qna-add-question-subtitle'>About the {this.props.name}</div>
           <form>
             <label>
               Your question*

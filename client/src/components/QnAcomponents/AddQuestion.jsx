@@ -24,7 +24,7 @@ class AddQuestion extends React.Component {
     let modal;
     let questionButton;
     if(this.state.isModalShown){
-      modal = <div><AddQuestionForm /></div>
+      modal = <div><AddQuestionForm name={this.props.name}/></div>
     } else {
       modal = <div></div>
     }
