@@ -39,6 +39,7 @@ class AddQuestionForm extends React.Component {
               <input
                 name='questionBody'
                 type='text'
+                maxlength='1000'
                 value={this.state.questionBody}
                 onChange={this.handleInputChange}
               />
@@ -48,6 +49,7 @@ class AddQuestionForm extends React.Component {
               <input
                 name='nickname'
                 type='text'
+                maxlength='60'
                 placeholder='Example: jackson11'
                 value={this.state.nickname}
                 onChange={this.handleInputChange}
@@ -58,6 +60,7 @@ class AddQuestionForm extends React.Component {
               <input
                 name='email'
                 type='text'
+                maxlength='60'
                 placeholder='Example: sample@email.com'
                 value={this.state.email}
                 onChange={this.handleInputChange}
