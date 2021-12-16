@@ -8,6 +8,9 @@ import sampleData from '../../../../example/questions.js';
 class QnA extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      product_name:'Random hoodie'
+    }
   }
 
   render(){
@@ -17,7 +20,7 @@ class QnA extends React.Component {
       <SearchQuestions />
       <QuestionsList data={sampleData}/>
       <MoreAnsweredQuestions />
-      <AddQuestion />
+      <AddQuestion name={this.state.product_name}/>
       </div>
 
     )
