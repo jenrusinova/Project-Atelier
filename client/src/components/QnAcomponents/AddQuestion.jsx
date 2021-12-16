@@ -1,4 +1,5 @@
 import React from 'react';
+import AddQuestionForm from './AddQuestionForm.jsx';
 
 class AddQuestion extends React.Component {
   constructor(props){
@@ -6,10 +7,7 @@ class AddQuestion extends React.Component {
     this.state = {
       isModalShown: false,
       isAddButtonShown: true,
-      product_id: 1,
-      question_body:'',
-      nickname:'',
-      email:''
+      product_id: 1
     }
     this.clickOnAddQuestion = this.clickOnAddQuestion.bind(this);
   }
@@ -26,7 +24,7 @@ class AddQuestion extends React.Component {
     let modal;
     let questionButton;
     if(this.state.isModalShown){
-      modal = <div>This is modal window</div>
+      modal = <div><AddQuestionForm /></div>
     } else {
       modal = <div></div>
     }
