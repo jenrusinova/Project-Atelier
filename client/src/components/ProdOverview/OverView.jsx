@@ -2,7 +2,7 @@ import React from 'react';
 import ProductInfo from './ProductInfo.jsx';
 import StyleSelector from './StyleSelector/StyleSelect.jsx';
 import AddToCart from './AddToCart.jsx';
-import ImageGallery from './ImageGal.jsx';
+import DefaultGallery from './ImageGallery/DefaultGal.jsx';
 import sampleData from '../../../../example/products.js'
 
 class ProductOverview extends React.Component{
@@ -12,7 +12,9 @@ class ProductOverview extends React.Component{
       products: sampleData.products,
       styles: sampleData.style,
       mainProduct: sampleData.specificProduct,
-      displayStyle: sampleData.style.results[0]
+      displayStyle: sampleData.style.results[0],
+      displayStyleImg: sampleData.style.results[0].photos[0].url,
+      displayStyleThumbs: sampleData.style.results[0].photos
     };
     this.updateStyle = this.updateStyle.bind(this)
   }
@@ -21,7 +23,14 @@ class ProductOverview extends React.Component{
 
   updateStyle(selectedStyle) {
     this.setState({
-      displayStyle: selectedStyle
+      displayStyle: selectedStyle,
+      displayStyleImg: selectedStyle.photos,
+    })
+  }
+
+  thumbToDisp(selectedImg) {
+    this.setState({
+      displayStyleImg: selectedImg
     })
   }
 
@@ -33,7 +42,8 @@ class ProductOverview extends React.Component{
         <StyleSelector data={this.state.styles} displayedStyle={this.state.displayStyle}
         changeStyle={this.updateStyle} />
         <AddToCart />
-        <ImageGallery />
+        <DefaultGallery displayedStyle={this.state.displayStyle} displayStyleImg={this.state.displayStyleImg}
+        displayStyleThumbs={this.state.displayStyleThumbs} thumbToDisp={this.thumbToDisp.bind(this)} />
       </div>
     );
   }

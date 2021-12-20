@@ -3,7 +3,23 @@
   position: relative;
   border: red 3px solid;
   width: 1100px;
-  height: 700px;
+  height: 800px;
+}
+.review-starBreakDown {
+  position: relative;
+}
+.review-starBreakDown-inner {
+  height: 100px;
+  border: 3px pink solid;
+}
+.review-starBreakDown-star {
+  display: inline-block;
+}
+.review-starBreakDown-recommended {
+  margin-top: 0px;
+}
+.review-starBreakDown-star-average {
+  display: inline-block;
 }
 .review-Cell {
   width: 750px;
@@ -30,7 +46,82 @@
   width: 750px;
   height: 600px;
   overflow-y: scroll;
-  border: brown solid 2px;
+}
+.review-starBreakDown-rating-percentage {
+  background-color: #d8d8d8;
+	border-radius: 5px;
+	position: relative;
+	margin: 15px 0;
+	height: 15px;
+	width: 150px;
+  display: inline-block;
+  cursor: pointer;
+}
+.review-Section {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 750px;
+  height: 700px;
+}
+.review-Button {
+  position: absolute;
+  bottom: 0;
+}
+.review-starSection {
+  width: 330px;
+  border: 3px solid black;
+}
+.review-starBreakDown-rating-percentage-clicked {
+  background-color: #d8d8d8;
+	box-shadow: 0 3px 3px -5px rgba(4, 99, 9, 0.89), 0 2px 5px rgba(4, 99, 9, 0.89);
+	border-radius: 5px;
+	position: relative;
+	margin: 15px 0;
+	height: 15px;
+	width: 150px;
+  margin-bottom:-3px;
+  padding-bottom:3px;
+  cursor: pointer;
+}
+.review-starBreakDown-filter {
+  background: linear-gradient(to left, #09e07c, rgba(4, 99, 9, 0.89));
+	border-radius: 5px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 1;
+}
+.review-starBreakDown-filter-clicked {
+  background: linear-gradient(to left, #09e07c, rgba(4, 99, 9, 0.89));
+	border-radius: 5px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 1;
+  margin-bottom:-3px;
+  padding-bottom:3px;
+}
+.review-starBreakDown-rating {
+  position: relative;
+  height: 50px;
+  border: 3px black solid;
+}
+.review-starBreakDown-rating-head {
+  position: absolute;
+  top:15px;
+  left: 5px
+}
+.review-starBreakDown-rating-star {
+  position: absolute;
+  top:2px;
+  left: 50px;
 }
 ::-webkit-scrollbar {
   width: 0px;
