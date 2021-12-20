@@ -9,7 +9,7 @@ class QuestionsListItemAnswer extends React.Component {
   }
 
   clickOnYes() {
-    //let questionId = this.props.questionId;
+  
     let answerId = this.props.answer.id;
     let productId = this.props.productId;
 
@@ -17,7 +17,6 @@ class QuestionsListItemAnswer extends React.Component {
     var url = 'http://localhost:3000/qna/updateAnswerHelp';
     axios.put(url, {params: {answerId: answerId, productId: productId}})
       .then((response) => {
-        console.log('increase helpful answer counter', response.data.results);
         this.props.update(response.data.results);
       })
       .catch(function (error) {
