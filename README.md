@@ -95,8 +95,11 @@ The Overview located at the top-most position of the page.  The functionality co
 
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
 - Write new review
-- 
 - Reviews List
+    - The list should display 2 tiles at a time. If there are more than 2 reviews that have been written for the given product, a button for “More Reviews” will appear below the list.
+    - If there are 2 or less reviews for the given product, then the button will not appear.
+    - Clicking this button will cause up to 2 additional reviews to appear.   The list should expand, and the review tiles should show in order below the previously loaded questions.
+    - As long as there are still unloaded reviews, the button will remain below the list.  Once all of the reviews for the product have been loaded, the button should no longer appear
 - Sorting
 - Rating Breakdown
 - Product Breakdown
@@ -182,6 +185,7 @@ The Related Items & Comparison module will display two sets of related products.
 - Enzyme
 - React testing library
 - AWS(EC2)
+- Webpack
 
 ### <a name="Contributors"></a> Contributors (in Alphabetical Order)
 
