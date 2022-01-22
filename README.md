@@ -92,34 +92,26 @@ The Overview located at the top-most position of the page.  The functionality co
     - Add To Cart Button
         - Alerts the user that product has been "Added to Cart"
 
-#### Ratings and Reviews
-![mode](http://g.recordit.co/csF2qSTBY6.gif)
-The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
-- Write new review
-    - Allow user to provide overall rating
-    - Allow user to recommend this product
-    - Allow user to select Characteristics 
-    - Allow user to provide Review summary and Review body
-    - Allow user to input personal information and upload images
-- Reviews List
-    - The list should display 2 tiles at a time. If there are more than 2 reviews that have been written for the given product, a button for “More Reviews” will appear below the list.
-    - If there are 2 or less reviews for the given product, then the button will not appear.
-    - Clicking this button will cause up to 2 additional reviews to appear.   The list should expand, and the review tiles should show in order below the previously loaded questions.
-    - As long as there are still unloaded reviews, the button will remain below the list.  Once all of the reviews for the product have been loaded, the button should no longer appear
-- Sorting
-   - Helpful: This sort order will prioritize reviews that have been found helpful.  The order can be found by subtracting “No” responses from “Yes” responses and sorting such that the highest score appears at the top.
-   - Newest:  This is a straightforward sort based on the date the review was submitted.  The most recent reviews should appear first.
-   - Relevance: Relevance will be determined by a combination of both the date that the review was submitted as well as ‘helpfulness’ feedback received.  This combination should weigh the two characteristics such that recent reviews appear near the top, but do not outweigh reviews that have been found helpful.  Similarly, reviews that have been helpful should appear near the top, but should yield to more recent reviews if they are older.
-- Rating Breakdown
-   - Rating average.
-   - Recommendations.
-- Product Breakdown
-   - Display feedback on specific characteristics of the product. 
 
+#### Related Items and Comparison
+![mode](http://g.recordit.co/NyqShdwGp5.gif)
 
-This component will extend the ability to write, read, and browse through reviews for the current product.
+The Related Items and Comparison Widget comprises of two modules:
+- Related Products
+- My Outfits
 
-All reviews will be saved per product.  Specific styles will not be accounted for within the review module.
+The Related Products module allows the user to be able to see any products that are related to the current product that is shown on the overall product page. The category, price, name, and rating of the products are shown, as well as an image of the main style of the product.
+
+Clicking on one of the Related Products will alter the main data to show the product data for the product that has been clicked on.
+
+Sets of 4 Related Products are shown at a time, and if the total of related products for the main product is more than 4, a right arrow is displayed at the end of the module. Clicking on the arrow will display the next set of related products (up to a maximum of 4 products). The same concept is handled by a left arrow button that is displayed after clicking on the right arrow button. The left arrow button allows the user to click and display the previous set of related products.
+
+The My Outfits module allows the user to be able to add the current product shown on the overall product page to be added to a personal "My Outfits" list. The "X" button allows the user to remove the outfit/item. The "Favorites" Star button in the Product Overview Module is linked to this, and any outfit that is added or removed is also reflected via the triggering of the "Favorites" Star button in the Product Overview Module.
+
+Clicking on one of the My Outfits will alter the main data to show the product data for the product that has been clicked on.
+
+The Related Items & Comparison module will display two sets of related products.  The first set will be a list of products, determined internally, that are related to the product currently being viewed.  The second set will be a list, custom created by the user, of products which the user has grouped with the current product into an ‘outfit’.
+
 
 #### Questions and Answers
 ![mode](http://g.recordit.co/KThWuhhUJs.gif)
@@ -166,24 +158,34 @@ If a question has more than 2 answers, only 2 answers are shown. Under the secon
 
 If the component has more than 2 questions, only 2 questions are shown. Under the second question a "show more questions" button is shown. When it is pressed the button completely disappears, and the questions' list is shown in full.
 
-#### Related Items and Comparison
-![mode](http://g.recordit.co/NyqShdwGp5.gif)
+#### Ratings and Reviews
+![mode](http://g.recordit.co/csF2qSTBY6.gif)
+The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
+- Write new review
+    - Allow user to provide overall rating
+    - Allow user to recommend this product
+    - Allow user to select Characteristics 
+    - Allow user to provide Review summary and Review body
+    - Allow user to input personal information and upload images
+- Reviews List
+    - The list should display 2 tiles at a time. If there are more than 2 reviews that have been written for the given product, a button for “More Reviews” will appear below the list.
+    - If there are 2 or less reviews for the given product, then the button will not appear.
+    - Clicking this button will cause up to 2 additional reviews to appear.   The list should expand, and the review tiles should show in order below the previously loaded questions.
+    - As long as there are still unloaded reviews, the button will remain below the list.  Once all of the reviews for the product have been loaded, the button should no longer appear
+- Sorting
+   - Helpful: This sort order will prioritize reviews that have been found helpful.  The order can be found by subtracting “No” responses from “Yes” responses and sorting such that the highest score appears at the top.
+   - Newest:  This is a straightforward sort based on the date the review was submitted.  The most recent reviews should appear first.
+   - Relevance: Relevance will be determined by a combination of both the date that the review was submitted as well as ‘helpfulness’ feedback received.  This combination should weigh the two characteristics such that recent reviews appear near the top, but do not outweigh reviews that have been found helpful.  Similarly, reviews that have been helpful should appear near the top, but should yield to more recent reviews if they are older.
+- Rating Breakdown
+   - Rating average.
+   - Recommendations.
+- Product Breakdown
+   - Display feedback on specific characteristics of the product. 
 
-The Related Items and Comparison Widget comprises of two modules:
-- Related Products
-- My Outfits
 
-The Related Products module allows the user to be able to see any products that are related to the current product that is shown on the overall product page. The category, price, name, and rating of the products are shown, as well as an image of the main style of the product.
+This component will extend the ability to write, read, and browse through reviews for the current product.
 
-Clicking on one of the Related Products will alter the main data to show the product data for the product that has been clicked on.
-
-Sets of 4 Related Products are shown at a time, and if the total of related products for the main product is more than 4, a right arrow is displayed at the end of the module. Clicking on the arrow will display the next set of related products (up to a maximum of 4 products). The same concept is handled by a left arrow button that is displayed after clicking on the right arrow button. The left arrow button allows the user to click and display the previous set of related products.
-
-The My Outfits module allows the user to be able to add the current product shown on the overall product page to be added to a personal "My Outfits" list. The "X" button allows the user to remove the outfit/item. The "Favorites" Star button in the Product Overview Module is linked to this, and any outfit that is added or removed is also reflected via the triggering of the "Favorites" Star button in the Product Overview Module.
-
-Clicking on one of the My Outfits will alter the main data to show the product data for the product that has been clicked on.
-
-The Related Items & Comparison module will display two sets of related products.  The first set will be a list of products, determined internally, that are related to the product currently being viewed.  The second set will be a list, custom created by the user, of products which the user has grouped with the current product into an ‘outfit’.
+All reviews will be saved per product.  Specific styles will not be accounted for within the review module.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
