@@ -92,7 +92,7 @@ The Overview located at the top-most position of the page.  The functionality co
         - Alerts the user that product has been "Added to Cart"
 
 #### Ratings and Reviews
-
+![mode](http://g.recordit.co/csF2qSTBY6.gif)
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
 - Write new review
     - Allow user to provide overall rating
