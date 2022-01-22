@@ -167,7 +167,7 @@ If a question has more than 2 answers, only 2 answers are shown. Under the secon
 If the component has more than 2 questions, only 2 questions are shown. Under the second question a "show more questions" button is shown. When it is pressed the button completely disappears, and the questions' list is shown in full.
 
 #### Related Items and Comparison
-![mode](http://g.recordit.co/KlGhnhxe0x.gif)
+![mode](http://g.recordit.co/NyqShdwGp5.gif)
 
 The Related Items and Comparison Widget comprises of two modules:
 - Related Products
