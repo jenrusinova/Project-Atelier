@@ -122,6 +122,7 @@ This component will extend the ability to write, read, and browse through review
 All reviews will be saved per product.  Specific styles will not be accounted for within the review module.
 
 #### Questions and Answers
+![mode](http://g.recordit.co/KThWuhhUJs.gif)
 
 The Questions & Answers module will allow asking and answering of questions for the product selected.  The functionality contained within this module can be divided into several pieces:
 - View questions
@@ -166,6 +167,7 @@ If a question has more than 2 answers, only 2 answers are shown. Under the secon
 If the component has more than 2 questions, only 2 questions are shown. Under the second question a "show more questions" button is shown. When it is pressed the button completely disappears, and the questions' list is shown in full.
 
 #### Related Items and Comparison
+![mode](http://g.recordit.co/KlGhnhxe0x.gif)
 
 The Related Items and Comparison Widget comprises of two modules:
 - Related Products
