@@ -176,6 +176,12 @@ The Related Items & Comparison module will display two sets of related products.
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ### <a name="Usage"></a> Usage 
+- React
+- Node
+- Express
+- Enzyme
+- React testing library
+- AWS(EC2)
 
 ### <a name="Contributors"></a> Contributors (in Alphabetical Order)
 
