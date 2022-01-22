@@ -95,14 +95,26 @@ The Overview located at the top-most position of the page.  The functionality co
 
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
 - Write new review
+    - Allow user to provide overall rating
+    - Allow user to recommend this product
+    - Allow user to select Characteristics 
+    - Allow user to provide Review summary and Review body
+    - Allow user to input personal information and upload images
 - Reviews List
     - The list should display 2 tiles at a time. If there are more than 2 reviews that have been written for the given product, a button for “More Reviews” will appear below the list.
     - If there are 2 or less reviews for the given product, then the button will not appear.
     - Clicking this button will cause up to 2 additional reviews to appear.   The list should expand, and the review tiles should show in order below the previously loaded questions.
     - As long as there are still unloaded reviews, the button will remain below the list.  Once all of the reviews for the product have been loaded, the button should no longer appear
 - Sorting
+   - Helpful: This sort order will prioritize reviews that have been found helpful.  The order can be found by subtracting “No” responses from “Yes” responses and sorting such that the highest score appears at the top.
+   - Newest:  This is a straightforward sort based on the date the review was submitted.  The most recent reviews should appear first.
+   - Relevance: Relevance will be determined by a combination of both the date that the review was submitted as well as ‘helpfulness’ feedback received.  This combination should weigh the two characteristics such that recent reviews appear near the top, but do not outweigh reviews that have been found helpful.  Similarly, reviews that have been helpful should appear near the top, but should yield to more recent reviews if they are older.
 - Rating Breakdown
+   - Rating average.
+   - Recommendations.
 - Product Breakdown
+   - Display feedback on specific characteristics of the product. 
+
 
 This component will extend the ability to write, read, and browse through reviews for the current product.
 
