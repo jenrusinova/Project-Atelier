@@ -13,10 +13,12 @@ ratingsRouter.get('/getReviews', async (req, res) => {
   let i = 2;
   while (prevReviews.length > 0) {
     let temp = await RatingApi.getTotalReviews(productId, i);
-    prevReviews = temp.results.slice();
-    if (prevReviews.length > 0) {
-      newReviews.push(prevReviews.slice());
-      i++;
+    if (temp) {
+      prevReviews = temp.results.slice();
+      if (prevReviews.length > 0) {
+        newReviews.push(prevReviews.slice());
+        i++;
+      }
     }
   }
   newReviews = newReviews.flat();
