@@ -10,6 +10,8 @@ Project Atelier comprises a complete redesign of the retail portal designed to m
 - [Product Description](#product-description)
 - [License](#license)
 - [Contributors](#contributors)
+- [Usage](#usage)
+
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -93,6 +95,7 @@ The Overview located at the top-most position of the page.  The functionality co
 
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected.  The functionality contained within this module can be divided into several pieces:
 - Write new review
+- 
 - Reviews List
 - Sorting
 - Rating Breakdown
@@ -172,6 +175,8 @@ The Related Items & Comparison module will display two sets of related products.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+### <a name="Usage"></a> Usage 
+
 ### <a name="Contributors"></a> Contributors (in Alphabetical Order)
 
 <p>
@@ -187,3 +192,4 @@ The Related Items & Comparison module will display two sets of related products.
   :boy: <b>Yanlin Ye</b> <br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/a244629128">@a244629128</a> <br>
 </p>
+
