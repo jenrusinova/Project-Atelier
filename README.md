@@ -59,7 +59,6 @@ $ npm start
 
 #### Product Overview
 ![mode](http://g.recordit.co/lrikvGlUKW.gif)
-
 The Overview located at the top-most position of the page.  The functionality contained within this module can be divided into several pieces:
 - Image gallery which displays the following:
     - Default Gallery
